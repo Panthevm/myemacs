@@ -9,11 +9,13 @@
 (general-create-definer space-map-command
   :prefix "SPC")
 
+(require 'emacs-google-translate)
 (general-define-key
  :states 'normal
  [f1]  'helm-for-files
  [f2]  'avy-goto-word-1
  [f12] 'eshell-command
+ [f11] 'emacs-google-translate/translate-to-russian
  "M-x" 'helm-M-x)
 
 (space-map-command

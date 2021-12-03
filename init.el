@@ -13,6 +13,7 @@
 (defpackage "emacs-evil.el")
 (defpackage "emacs-winum.el")
 (defpackage "emacs-company-statistics.el")
+(defpackage "emacs-google-translate.el")
 (defpackage "emacs-org-bullets.el")
 (defpackage "emacs-rainbow-mode.el")
 (defpackage "emacs-clojure-mode.el")
@@ -52,7 +53,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(org-bullets winum visual-fill-column rainbow-mode paredit helm-ag general evil company-statistics cider avy)))
+   '(google-translate org-bullets winum visual-fill-column rainbow-mode paredit helm-ag general evil company-statistics cider avy)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
