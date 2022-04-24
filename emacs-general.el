@@ -10,10 +10,12 @@
   :prefix "SPC")
 
 (require 'emacs-google-translate)
+
 (general-define-key
  :states 'normal
- [f1]  'helm-for-files
+ [f1]  'fzf-switch-buffer
  [f2]  'avy-goto-word-1
+ [f3]  'fzf-git-files
  [f12] 'eshell-command
  [f11] 'emacs-google-translate/translate-to-russian
  "M-x" 'helm-M-x)

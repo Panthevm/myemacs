@@ -1,0 +1,5 @@
+(unless (package-installed-p 'fzf)
+  (package-install 'fzf)
+  (package-refresh-contents))
+(require 'fzf)
+(provide 'emacs-fzf)
