@@ -8,8 +8,8 @@
   (package-install 'emojify)
   (package-refresh-contents))
 
-(add-to-list 'load-path "/home/panthevm/.emacs.d/libraries/telega.el")
-(add-to-list 'load-path "/home/panthevm/.emacs.d/libraries/visual-fill-column")
+(add-to-list 'load-path "libraries/telega.el")
+(add-to-list 'load-path "libraries/visual-fill-column")
 (require 'telega)
 (require 'emojify)
 (require 'visual-fill-column)

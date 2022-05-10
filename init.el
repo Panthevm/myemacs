@@ -43,5 +43,6 @@
 (setq auto-save-default nil)
 (setq vc-handled-backends nil)
 (setq redisplay-dont-pause t)
+(with-temp-buffer (write-file (expand-file-name "custom.el" user-emacs-directory)))
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
