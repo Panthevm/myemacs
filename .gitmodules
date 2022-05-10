@@ -1,0 +1,3 @@
+[submodule "libraries/telega.el"]
+	path = libraries/telega.el
+	url = git@github.com:Panthevm/telega.el.git

@@ -27,6 +27,7 @@
 (defpackage "emacs-layout.el")
 (defpackage "emacs-modeline.el")
 (defpackage "emacs-general.el")
+(defpackage "emacs-telega.el")
 
 (load-theme 'emacs t)
 (show-paren-mode t)

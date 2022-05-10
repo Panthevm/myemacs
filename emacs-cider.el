@@ -10,4 +10,7 @@
 (setq cider-auto-select-test-report-buffer nil)
 (setq cider-auto-select-error-buffer       nil)
 
+(defun cider-persistent-scope (&optional argument)
+  )
+
 (provide 'emacs-cider)

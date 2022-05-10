@@ -16,12 +16,17 @@
  [f1]  'fzf-switch-buffer
  [f2]  'avy-goto-word-1
  [f3]  'fzf-git-files
+ [f4]  'telega
  [f12] 'eshell-command
  [f11] 'emacs-google-translate/translate-to-russian
  "M-x" 'helm-M-x)
 
 (space-map-command
   :states 'normal
+  ;; Telega
+  :peffix "SPC" "t a p" 'telega-chatbuf-attach-photo
+  :peffix "SPC" "t a s" 'telega-chatbuf-attach-sticker
+  :peffix "SPC" "t a a" 'telega-chatbuf-attach-animation
   ;; Search
   :peffix "SPC" "s p" 'helm-do-ag-project-root
   :peffix "SPC" "s d" 'find-file
