@@ -4,16 +4,18 @@
       (with-current-buffer (window-buffer window)
 	(set-window-parameter window 'mode-line-format 'none)))))
 
-(defun modeline.compose ()
+(defun modeline.compose (&rest args)
   (concat 
    "|"
    (propertize
     (winum-get-number-string)
     'face `(:foreground , emacs-theme.color-1))
    "| "
-   (propertize
-    (abbreviate-file-name buffer-file-name)
-    'face `(:foreground , emacs-theme.color-2))))
+   (and buffer-file-name
+	(propertize
+	 (abbreviate-file-name buffer-file-name)
+	 'face `(:foreground , emacs-theme.color-2)))
+   ""))
 
 (defun modeline.make-header-line ()
   (interactive)
